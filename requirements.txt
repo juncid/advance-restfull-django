@@ -1,7 +1,11 @@
+#DB
+psycopg2>=2.7.5 , <2.8.4
 
+#Django
 Django>=2.2.4,<3.0
 
 #Django Rest Framework
 djangorestframework>=3.9.2
 
+#test and lynt
 flake8>=3.7.0, <3.8
