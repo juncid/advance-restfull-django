@@ -1,5 +1,8 @@
 version: '3'
 
+volumes: 
+ recipe_data: {}
+
 services:
  app:
    build:
@@ -22,6 +25,8 @@ services:
 
  db:
    image: postgres:11.3-alpine
+   volumes: 
+     - recipe_data:/var/lib/postgresql/data
    environment: 
      - POSTGRES_DB=app
      - POSTGRES_USER=postgres
