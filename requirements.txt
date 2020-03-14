@@ -12,3 +12,6 @@ flake8>=3.7.0, <3.8
 
 #manage images
 Pillow>=6.0.0, <7.0.0
+
+#Swagger
+drf-yasg
